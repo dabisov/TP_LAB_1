@@ -1,5 +1,5 @@
-binary: main.o libgcd_iterative.so
-	g++ -o binary main.o -L. -lgcd_iterative -Wl,-rpath,.
+gcd_app: main.o libgcd_iterative.so
+	g++ -o gcd_app main.o -L. -lgcd_iterative -Wl,-rpath,.
 
 main.o: main.cpp
 	g++ -c main.cpp
@@ -11,4 +11,4 @@ gcd_iterative.o: gcd_iterative.cpp
 	g++ -c -fPIC gcd_iterative.cpp
 
 clean:
-	rm -f *.o *.so binary
+	rm -f *.o *.so gcd_app
