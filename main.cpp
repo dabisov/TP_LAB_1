@@ -15,5 +15,5 @@ unsigned long long getValue(string message){
 }
 
 int main(void){
-    cout << gcd_iterative(getValue("Введите первое число: "), getValue("Введите второе число: "));
+    cout << "НОД: " << gcd_iterative(getValue("Введите первое число: "), getValue("Введите второе число: ")) << endl;
 }
